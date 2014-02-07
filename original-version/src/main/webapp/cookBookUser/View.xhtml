@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+   <ui:composition template="/WEB-INF/template.xhtml">
+      <ui:define name="title">
+         <h:outputText value="#{bundle.ViewCookBookUserTitle}"></h:outputText>
+      </ui:define>
+      <ui:define name="body">
+         <h:panelGroup id="messagePanel" layout="block">
+            <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+         </h:panelGroup>
+         <h:form>
+            <h:panelGrid columns="2">
+               <h:outputText value="#{bundle.ViewCookBookUserLabel_id}"/>
+               <h:outputText value="#{cookBookUserController.selected.id}" title="#{bundle.ViewCookBookUserTitle_id}"/>
+               <h:outputText value="#{bundle.ViewCookBookUserLabel_firstName}"/>
+               <h:outputText value="#{cookBookUserController.selected.firstName}" title="#{bundle.ViewCookBookUserTitle_firstName}"/>
+               <h:outputText value="#{bundle.ViewCookBookUserLabel_lastName}"/>
+               <h:outputText value="#{cookBookUserController.selected.lastName}" title="#{bundle.ViewCookBookUserTitle_lastName}"/>
+               <h:outputText value="#{bundle.ViewCookBookUserLabel_email}"/>
+               <h:outputText value="#{cookBookUserController.selected.email}" title="#{bundle.ViewCookBookUserTitle_email}"/>
+            </h:panelGrid>
+            <br />
+            <br />
+            <h:link outcome="Edit" value="#{bundle.ViewCookBookUserEditLink}"/>
+            <br />
+            <h:commandLink action="#{cookBookUserController.prepareCreate}" value="#{bundle.ViewCookBookUserCreateLink}" />
+            <br />
+            <h:commandLink action="#{cookBookUserController.prepareList}" value="#{bundle.ViewCookBookUserShowAllLink}"/>
+            <br />
+            <br />
+            <h:link outcome="/index" value="#{bundle.ViewCookBookUserIndexLink}"/>
+
+         </h:form>
+      </ui:define>
+   </ui:composition>
+
+</html>
