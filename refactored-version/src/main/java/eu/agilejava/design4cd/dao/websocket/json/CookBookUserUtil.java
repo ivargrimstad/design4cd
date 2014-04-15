@@ -38,7 +38,7 @@ import javax.json.JsonReader;
  * 
  * @author Ivar Grimstad <ivar.grimstad@gmail.com>
  */
-public class CookBookUserUtil {
+public final class CookBookUserUtil {
 
    private CookBookUserUtil() {
    }

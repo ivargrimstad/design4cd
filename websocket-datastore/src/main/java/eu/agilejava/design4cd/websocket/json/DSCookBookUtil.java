@@ -39,14 +39,14 @@ import javax.json.JsonReader;
  *
  * @author Ivar Grimstad <ivar.grimstad@gmail.com>
  */
-public class DSCookBookUtil {
+public final class DSCookBookUtil {
 
    private DSCookBookUtil() {
    }
 
    /**
     * Create CookBook from JSON string.
-    * 
+    *
     * @param message The JSON string
     * @return A cookbook
     */
@@ -59,7 +59,7 @@ public class DSCookBookUtil {
 
    /**
     * Create CookBook from JSON object.
-    * 
+    *
     * @param model The JSON object
     * @return A cookbook
     */
@@ -76,7 +76,7 @@ public class DSCookBookUtil {
 
    /**
     * Create JSON string from CookBook.
-    * 
+    *
     * @param cookBook The cookbook
     * @return A JSON string representing a cookbook
     */
@@ -86,7 +86,7 @@ public class DSCookBookUtil {
 
    /**
     * Create JSON string from list of CookBooks.
-    * 
+    *
     * @param cookBooks The cookbooks
     * @return JSON string representing list of cookbooks
     */
@@ -103,7 +103,7 @@ public class DSCookBookUtil {
 
    /**
     * Create JSON object builder from CookBook.
-    * 
+    *
     * @param cookBook The cookbook
     * @return A JSON object builder
     */

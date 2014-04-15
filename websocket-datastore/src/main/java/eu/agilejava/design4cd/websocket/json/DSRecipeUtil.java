@@ -39,7 +39,7 @@ import static eu.agilejava.design4cd.websocket.json.DSCookBookUtil.*;
  * 
  * @author Ivar Grimstad <ivar.grimstad@gmail.com>
  */
-public class DSRecipeUtil {
+public final class DSRecipeUtil {
 
    private DSRecipeUtil() {
    }

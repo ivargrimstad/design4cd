@@ -39,7 +39,7 @@ import javax.json.JsonReader;
  * 
  * @author Ivar Grimstad <ivar.grimstad@gmail.com>
  */
-public class DSCookBookUserUtil {
+public final class DSCookBookUserUtil {
 
    private DSCookBookUserUtil() {
    }

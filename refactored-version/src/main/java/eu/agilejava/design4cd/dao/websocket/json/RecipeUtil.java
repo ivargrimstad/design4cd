@@ -40,7 +40,7 @@ import static eu.agilejava.design4cd.dao.websocket.json.CookBookUtil.*;
  *
  * @author Ivar Grimstad <ivar.grimstad@gmail.com>
  */
-public class RecipeUtil {
+public final class RecipeUtil {
 
    private RecipeUtil() {
    }
